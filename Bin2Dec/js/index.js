@@ -1,4 +1,4 @@
-// Aciona a função convert() com a tecla enter ou numpad enter
+// Activate the convert() function with an enter key or numpad enter
 const input = document.getElementById("binary");
 input.addEventListener("keyup", function(event) {
   if ( event.code === "Enter" ||event.code === "NumpadEnter" ) {
@@ -8,7 +8,7 @@ input.addEventListener("keyup", function(event) {
 })
 
 
-// Faz a conversão de decimal para binário
+// Converter
 function convert() {
   const char = document.getElementById("binary").value;
 
@@ -22,7 +22,6 @@ function convert() {
 }
 
 
-// Valida os dados do input
 function validate(value) {
 
   removeSpaces(value)
@@ -37,7 +36,7 @@ function validate(value) {
 }
 
 
-// Remove os espaços em branco do input
+// Remove blank spaces
 function removeSpaces(value) {
   if ( value === ' ' ) {
     return alert("Please, dont use spaces.");
